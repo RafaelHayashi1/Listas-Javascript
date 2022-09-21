@@ -3,7 +3,7 @@
 um novo array
 */
 function juntar(n1,n2){
-    let res = [n1,n2]
+    let res = [...n1,...n2] //... usado para criar a func de juntar variaveis, existe tambem o concat().
     return res = res.sort()
 }
 let n1 = [10,20,30]
