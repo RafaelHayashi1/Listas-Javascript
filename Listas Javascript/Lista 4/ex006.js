@@ -3,9 +3,9 @@
 um novo array
 */
 function juntar(n1,n2){
-    let res = [...n1,...n2] //... usado para criar a func de juntar variaveis, existe tambem o concat().
+    let res = [...n1,...n2] 
     return res = res.sort()
 }
-let n1 = [10,20,30]
-let n2 = [40,50,60]
+let n1 = [10,20,30,80]
+let n2 = [40,50,60,70,90]
 console.log(juntar(n1,n2))
