@@ -7,16 +7,16 @@ o produto que o cliente deseja e a respectiva quantidade. Esse
 pedido pode ser pago em dinheiro, cheque ou cartão.”
 */
 const mercado = {
-    produto1:'banana',preco:3,quantidade1:5,
-    produto2:'maça',preco1:2,quantidade2:2,
-    produto3:'pão',preco2:1,quantidade3:8,
+    produto1:'banana',preco1:3,quantidade1:5,
+    produto2:'maça',preco2:2,quantidade2:2,
+    produto3:'pão',preco3:1,quantidade3:8,
 }
 const pedido = {
     pedidoA:mercado.produto1,quantidadec1:mercado.quantidade1-2,//entrada estática de 3 bananas,.
     pedidoB:mercado.produto3,quantidadec2:mercado.quantidade3-1,//entrada estática de 7 pães.
     pago:'Esse pedido pode ser pago em dinheiro, cheque ou cartão.', 
 }
-let preco = (pedido.quantidadec1*mercado.preco) + (pedido.quantidadec2*mercado.preco2)
+let preco = (pedido.quantidadec1*mercado.preco1) + (pedido.quantidadec2*mercado.preco3)
 console.log(`Produto:${pedido.pedidoA}\nQuantidade:${pedido.quantidadec1}`)
 console.log(`Produto:${pedido.pedidoB}\nQuantidade:${pedido.quantidadec2}`)
 console.log(`Preço total a pagar:${preco}`)
